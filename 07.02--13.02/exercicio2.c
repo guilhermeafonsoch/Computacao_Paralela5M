@@ -19,9 +19,44 @@
 
 
 
-int main()
-{
-    printf("Hello world2!\n");
+int main(){
+    float N1, N2, N3, MA, ME;
+
+  //Input das notas
+    printf("Primeira nota: ");
+    scanf("%f",&N1);
+
+    printf("Segunda nota: ");
+    scanf("%f",&N2);
+
+    printf("Terceira nota: ");
+    scanf("%f",&N3);
+
+    printf("Média das notas dos exercícios realizados: ");
+    scanf("%f",&ME);
+
+  //Calcula da media anual
+    MA = (N1 + N2*2 + N3*3 + ME)/7 ;
+
+  //Print
+    if(MA>=9){
+        printf("Nota anual = A");
+        }
+    else if(MA>=7.5){
+        printf("Nota anual = B");
+        }
+    else if(MA>=6){
+        printf("Nota anual = C");
+        }
+    else if(MA>=4){
+        printf("Nota anual = D");
+        }
+    else{
+       printf("Nota anual = E");
+        }
+
+
+    printf("\n");
     return 0;
 }
 
